@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import Service from "./Service";
 import { AiFillDownSquare } from "react-icons/ai";
 
-const Services = ({ serviceOne, serviceTwo, serviceThree }) => {
+const Services = ({ companyServices }) => {
   const [isClicked, setIsClicked] = useState("off");
 
   const handleClick = () => {
@@ -26,11 +27,9 @@ const Services = ({ serviceOne, serviceTwo, serviceThree }) => {
           isClicked === "on" ? " services__box--show" : ""
         }`}
       >
-        <div className="services__row services__row--first-border">
-          {serviceOne}
-        </div>
-        <div className="services__row">{serviceTwo}</div>
-        <div className="services__row">{serviceThree}</div>
+        {companyServices.map((x, i) => (
+          <Service key={x.id} serviceName={x.name} />
+        ))}
       </div>
     </div>
   );
