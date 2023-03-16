@@ -1,16 +1,14 @@
 import React from "react";
+import bg from "../assets/img/bg.jpg";
+import user from "../assets/img/user.png";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__banner">
-        <img
-          src="/src/assets/bg.jpg"
-          alt="header background"
-          className="header__bg-img"
-        />
+        <img src={bg} alt="header background" className="header__bg-img" />
 
-        <img src="/src/assets/user.png" alt="" className="header__avatar" />
+        <img src={user} alt="" className="header__avatar" />
       </div>
     </header>
   );
