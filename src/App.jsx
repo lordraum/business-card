@@ -23,7 +23,7 @@ const App = () => {
     },
     {
       id: 1,
-      name: "Desarrollo de aplicaciones web, móvil l y de escritorio",
+      name: "Desarrollo de aplicaciones web, móvil y de escritorio",
     },
     {
       id: 2,
